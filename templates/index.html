@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Fruit Shop – Customer Support</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="chat" aria-label="Fresh Fruit Shop customer support chat">
+    <header class="chat__header">
+      <span class="chat__logo" aria-hidden="true">🍎</span>
+      <div>
+        <h1>Fresh Fruit Shop</h1>
+        <p><span class="dot" aria-hidden="true"></span>Customer support · online</p>
+      </div>
+    </header>
+
+    <div id="log" class="chat__log" role="log" aria-live="polite"></div>
+
+    <div id="chips" class="chips" aria-label="Suggested messages"></div>
+
+    <form id="form" class="chat__form" autocomplete="off">
+      <label for="input" class="sr-only">Type your message</label>
+      <input id="input" type="text" maxlength="300" placeholder="Ask about a fruit or place an order…" required>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
