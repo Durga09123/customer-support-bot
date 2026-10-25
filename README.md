@@ -28,3 +28,5 @@ vercel.json       Vercel configuration
 requirements.txt  Python dependencies
 ```
 Edit prices in the `CATALOG` dictionary at the top of `bot.py`.
+
+https://customer-support-bot-six-dun.vercel.app/
